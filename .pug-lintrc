@@ -1,0 +1,18 @@
+{ 
+    // "extends": "clock",
+    "disallowDuplicateAttributes": true,
+    "disallowSpacesInsideAttributeBrackets": true,
+    "requireClassLiteralsBeforeAttributes": true,
+    "requireClassLiteralsBeforeIdLiterals": true,
+    "requireIdLiteralsBeforeAttributes": true,
+    "requireLowerCaseAttributes": true,
+    "requireLowerCaseTags": true,
+    "requireSpaceAfterCodeOperator": true,
+    "requireSpecificAttributes": [ { "img": [ "alt" ] } ],
+    "requireStrictEqualityOperators": true,
+    "validateAttributeQuoteMarks": "'",
+    "validateAttributeSeparator": { "separator": " ", "multiLineSeparator": "\n  " },
+    "validateDivTags": true,
+    "validateExtensions": true,
+    "validateIndentation": 2
+}
