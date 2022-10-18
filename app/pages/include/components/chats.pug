@@ -1,2 +1,32 @@
-section.tab-pane.fade(id='nav-chats' role='tabpanel' aria-labelledby='nav-chats-tab')
- h1 chats
+-
+  var chats = [
+    {
+      name: "Вениамин Редакторович",
+      msg: "o_O",
+      avatar: "/images/avatar_4.jpg",
+      time: "11:45"
+    },
+    {
+      name: "Джедай Падаванов",
+      msg: "Привет, скоро третий проект? Уже скоро надо будет выложить",
+      avatar: "/images/avatar_2.jpg",
+      time: "10:12"
+    },
+    {
+      name: "Алексей Примадонин",
+      msg: "Тесты упали >_<",
+      avatar: "/images/avatar_3.jpg",
+      time: "08:53"
+    },
+  ]
+
+section.chats.tab-pane.fade(id='nav-chats' role='tabpanel' aria-labelledby='nav-chats-tab')
+  h1.h2.fw-bold.mb-4 Чаты
+  input.px-4.py-3.border-0.border-bottom.w-100.mb-5(type='text' placeholder='Поиск по сообщениям')
+  each chat in chats
+    a.chat.mb-3(href='#')        
+      img.chat-img(src= chat.avatar alt="avatar")
+      .chat-body.flex-grow-1
+        p.chat-name= chat.name
+        p.chat-msg= chat.msg
+      .chat-time= chat.time
