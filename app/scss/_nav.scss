@@ -1,0 +1,12 @@
+.navbar-custom {
+    display: flex;
+    height: 72px;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: calc(map.get($spacers, 4)*0.5 + map.get($spacers, 2));
+    padding-right: calc(map.get($spacers, 4)*0.5 + map.get($spacers, 2));
+
+    img {
+        filter: invert(1);
+    }
+}

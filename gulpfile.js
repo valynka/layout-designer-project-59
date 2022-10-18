@@ -9,8 +9,9 @@ const browserSyncJob = () => {
     browserSync.init({
       server: "build/"
     });
-    watch('app/scss/*.scss', buildSass);
-    watch('app/pages/*.pug', buildPug);
+    watch('app/scss/**/*.scss', buildSass);
+    watch('app/pages/**/*.pug', buildPug);
+    watch('app/images/*', destImages);
 };  
 
 const buildSass = () => {
@@ -31,5 +32,10 @@ const buildPug = () => {
       .pipe(browserSync.stream());
 }
 
+const destImages = () => {
+  return src('app/images/**/*')
+    .pipe(dest('build/images'));
+}
+
 exports.server = browserSyncJob;
-exports.build = parallel(buildSass, buildPug);
+exports.build = parallel(buildSass, buildPug, destImages);
