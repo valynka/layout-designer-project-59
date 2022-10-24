@@ -1,5 +1,5 @@
 -
-  var contacts = {
+  let contacts = {
     "A": [{
       name: "Алексей Примадонин",
       status: "Онлайн",
@@ -34,11 +34,12 @@
       status: "Был онлайн вчера",
       avatar: "/images/avatar_6.jpg"
     }],
-  }
+  };
+- let header = "Контакты";
+- let placeholder = "Поиск по контактам";
 
 section.contacts.tab-pane.fade.show.active(id='nav-contacts' role='tabpanel' aria-labelledby='nav-contacts-tab')
-  h1.h2.fw-bold.mb-4 Контакты
-  input.px-4.py-3.border-0.border-bottom.w-100(type='text' placeholder='Поиск по контактам')
+  include ../leftside-top.pug
   each users, letter in contacts
     p.text-muted.text-uppercase.mt-5= letter 
     each user in users

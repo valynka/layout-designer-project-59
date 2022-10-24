@@ -1,10 +1,6 @@
 .chats {
 	@include hide-scrollbar;
 	height: 83vh;
-
-	input {
-		outline: none;
-	}
 }
 
 .chat {

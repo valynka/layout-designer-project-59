@@ -18,11 +18,12 @@
       avatar: "/images/avatar_3.jpg",
       time: "08:53"
     },
-  ]
+  ];
+- header = "Чаты";
+- placeholder = "Поиск по сообщениям";
 
 section.chats.tab-pane.fade(id='nav-chats' role='tabpanel' aria-labelledby='nav-chats-tab')
-  h1.h2.fw-bold.mb-4 Чаты
-  input.px-4.py-3.border-0.border-bottom.w-100.mb-5(type='text' placeholder='Поиск по сообщениям')
+  include ../leftside-top.pug
   each chat in chats
     a.chat.mb-3(href='#')        
       img.chat-img(src= chat.avatar alt="avatar")
