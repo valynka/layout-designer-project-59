@@ -37,5 +37,10 @@ const destImages = () => {
     .pipe(dest('build/images'));
 }
 
+const destJs = () => {
+  return src('node_modules/bootstrap/dist/js/bootstrap.min.js')
+    .pipe(dest('build/js/'));
+}
+
 exports.server = browserSyncJob;
-exports.build = parallel(buildSass, buildPug, destImages);
+exports.build = parallel(buildSass, buildPug, destImages, destJs);

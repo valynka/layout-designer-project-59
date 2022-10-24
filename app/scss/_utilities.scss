@@ -1,12 +1,12 @@
 $utilities: map-merge(
-  $utilities,
-  (
-    "outline": (
-      property: outline,
-      values: (
-        null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color),
-        0: 0,
-      )
-    ),
-  ),
-)
+	$utilities,
+	(
+		"outline": (
+			property: outline,
+			values: (
+				null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color),
+				0: 0,
+			)
+		),
+	),
+);
