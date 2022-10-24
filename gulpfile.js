@@ -42,5 +42,11 @@ const destJs = () => {
     .pipe(dest('build/js/'));
 }
 
+const destDocs = () => {
+  return src('build/**/*')
+    .pipe(dest('docs/'));
+}
+
+exports.docs = destDocs;
 exports.server = browserSyncJob;
 exports.build = parallel(buildSass, buildPug, destImages, destJs);
