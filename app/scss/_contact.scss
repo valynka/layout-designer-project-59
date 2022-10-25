@@ -24,9 +24,6 @@
 	}
 
 	&-body {
-		display: flex;
-		flex-direction: column;
-
 		.contact-name {
 			margin-bottom: map.get($spacers, 0);
 

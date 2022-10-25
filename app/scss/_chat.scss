@@ -4,6 +4,9 @@
 }
 
 .chat {
+	&:first-of-type {
+		margin-top: map.get($spacers, 5);
+	}
 
 	display: flex;
 
@@ -24,27 +27,43 @@
 	}
 
 	&-body {
-		display: flex;
-		flex-direction: column;
+		display: grid;
+		grid-template-rows: 2;
+		grid-template-columns: repeat(5, 1fr);
+
+		overflow: hidden;
 
 		.chat-name {
+			grid-row: 1 / 2;
+
+			grid-column: 1 / 5;
 			margin-bottom: map.get($spacers, 0);
 
 			font-weight: $font-weight-bold;
 		}
 
 		.chat-msg {
+			grid-row: 2 / 3;
+
+			grid-column: 1 / -1;
 			margin-top: map.get($spacers, 0);
+			overflow: hidden;
 
 			color: $gray-600;
 			font-size: 80%;
+			white-space: nowrap;
 			text-overflow: ellipsis;
 		}
-	}
 
-	&-time {
-		color: $gray-500;
-		font-size: 80%;
+		.chat-time {
+			grid-row: 1 / 2;
+
+			grid-column: 5 / -1;
+
+			color: $gray-500;
+			font-size: 80%;
+			text-align: right;
+		}
 	}
 
 	&:hover {

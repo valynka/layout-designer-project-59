@@ -12646,10 +12646,6 @@ textarea.form-control-lg {
   margin-right: 1.5rem;
   border-radius: 50%;
 }
-.contact-body {
-  display: flex;
-  flex-direction: column;
-}
 .contact-body .contact-name {
   margin-bottom: 0;
   font-weight: 700;
@@ -12671,6 +12667,7 @@ textarea.form-control-lg {
   width: 200px;
   height: 200px;
   border-radius: 50%;
+  margin-top: 30vh;
 }
 
 .navbar-custom {
@@ -12705,6 +12702,9 @@ textarea.form-control-lg {
   text-decoration: none;
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
 }
+.chat:first-of-type {
+  margin-top: 3rem;
+}
 .chat-img {
   width: 50px;
   height: 50px;
@@ -12712,22 +12712,33 @@ textarea.form-control-lg {
   border-radius: 50%;
 }
 .chat-body {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 2;
+  overflow: hidden;
 }
 .chat-body .chat-name {
   margin-bottom: 0;
   font-weight: 700;
+  grid-column: 1/5;
+  grid-row: 1/2;
 }
 .chat-body .chat-msg {
   margin-top: 0;
   color: #6c757d;
   font-size: 80%;
+  white-space: nowrap;
+  overflow: hidden;
   text-overflow: ellipsis;
+  grid-column: 1/-1;
+  grid-row: 2/3;
 }
-.chat-time {
+.chat-body .chat-time {
   color: #adb5bd;
   font-size: 80%;
+  text-align: right;
+  grid-column: 5/-1;
+  grid-row: 1/2;
 }
 .chat:hover {
   color: #fff;

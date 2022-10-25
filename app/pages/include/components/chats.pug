@@ -27,7 +27,7 @@ section.chats.tab-pane.fade(id='nav-chats' role='tabpanel' aria-labelledby='nav-
   each chat in chats
     a.chat.mb-3(href='#')        
       img.chat-img(src= chat.avatar alt="avatar")
-      .chat-body.flex-grow-1
+      .chat-body
         p.chat-name= chat.name
+        .chat-time= chat.time
         p.chat-msg= chat.msg
-      .chat-time= chat.time
