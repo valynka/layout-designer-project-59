@@ -12621,7 +12621,7 @@ textarea.form-control-lg {
   }
 }
 .contacts {
-  height: 83vh;
+  height: calc(100vh - 168px);
 }
 .contacts {
   overflow-x: hidden;
@@ -12646,10 +12646,6 @@ textarea.form-control-lg {
   margin-right: 1.5rem;
   border-radius: 50%;
 }
-.contact-body {
-  display: flex;
-  flex-direction: column;
-}
 .contact-body .contact-name {
   margin-bottom: 0;
   font-weight: 700;
@@ -12670,6 +12666,7 @@ textarea.form-control-lg {
 .avatar {
   width: 200px;
   height: 200px;
+  margin-top: 30vh;
   border-radius: 50%;
 }
 
@@ -12686,7 +12683,7 @@ textarea.form-control-lg {
 }
 
 .chats {
-  height: 83vh;
+  height: calc(100vh - 168px);
 }
 .chats {
   overflow-x: hidden;
@@ -12705,6 +12702,9 @@ textarea.form-control-lg {
   text-decoration: none;
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
 }
+.chat:first-of-type {
+  margin-top: 3rem;
+}
 .chat-img {
   width: 50px;
   height: 50px;
@@ -12712,22 +12712,33 @@ textarea.form-control-lg {
   border-radius: 50%;
 }
 .chat-body {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: 2;
+  grid-template-columns: repeat(5, 1fr);
+  overflow: hidden;
 }
 .chat-body .chat-name {
+  grid-row: 1/2;
+  grid-column: 1/5;
   margin-bottom: 0;
   font-weight: 700;
 }
 .chat-body .chat-msg {
+  grid-row: 2/3;
+  grid-column: 1/-1;
   margin-top: 0;
+  overflow: hidden;
   color: #6c757d;
   font-size: 80%;
+  white-space: nowrap;
   text-overflow: ellipsis;
 }
-.chat-time {
+.chat-body .chat-time {
+  grid-row: 1/2;
+  grid-column: 5/-1;
   color: #adb5bd;
   font-size: 80%;
+  text-align: right;
 }
 .chat:hover {
   color: #fff;
@@ -12735,4 +12746,17 @@ textarea.form-control-lg {
 }
 .chat:hover .chat-msg, .chat:hover .chat-time {
   color: #fff;
+}
+
+.profile {
+  height: calc(100vh - 168px);
+}
+.profile {
+  overflow-x: hidden;
+  overflow-y: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.profile::-webkit-scrollbar {
+  display: none;
 }
