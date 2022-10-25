@@ -9,16 +9,16 @@
   <body class="h-100">
     <div class="container-xxxl h-100 bg-gray px-4 py-4 overflow-hidden">
       <div class="row h-100 rounded-4 bg-white overflow-hidden mx-0">
-        <div class="col-12 col-md-7 col-lg-6 col-xl-5 col-xxl-4 border-end d-flex flex-column p-0">        
+        <div class="col-12 col-md-7 col-lg-6 col-xl-5 col-xxl-4 border-end d-flex flex-column p-0">      
           <nav class="navbar-custom bg-primary order-2 order-md-1 w-100"><a class="logo me-md-4 me-xxl-6" href="#"><img src="images/icons/logo.svg" alt="logo" width="14"></a>
             <div class="nav d-flex justify-content-end justify-content-md-between flex-grow-1" id="nav-tab" role="tablist">
-              <div class="nav-link link-light p-0 active" id="nav-contacts-tab" data-bs-toggle="tab" data-bs-target="#nav-contacts" type="button" role="tab" aria-controls="nav-contacts" aria-selected="true"><img class="me-7 me-md-2" src="images/icons/people.svg" alt="people" width="25"><span class="d-none d-md-inline">Контакты</span></div>
-              <div class="nav-link link-light p-0" id="nav-chats-tab" data-bs-toggle="tab" data-bs-target="#nav-chats" type="button" role="tab" aria-controls="nav-chats" aria-selected="false"><img class="me-7 me-md-2" src="images/icons/chat.svg" alt="message" width="25"><span class="d-none d-md-inline">Сообщения</span></div>
-              <div class="nav-link link-light p-0" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false"><img class="me-7 me-md-2" src="images/icons/person.svg" alt="person" width="25"><span class="d-none d-md-inline">Профиль</span></div>
+              <div class="nav-link link-light p-0 active" id="nav-contacts-tab" data-bs-toggle="tab" data-bs-target="#contacts" type="button" role="tab" aria-controls="nav-contacts" aria-selected="true"><img class="me-7 me-md-2" src="images/icons/people.svg" alt="people" width="25"><span class="d-none d-md-inline">Контакты</span></div>
+              <div class="nav-link link-light p-0" id="nav-chats-tab" data-bs-toggle="tab" data-bs-target="#chats" type="button" role="tab" aria-controls="nav-chats" aria-selected="false"><img class="me-7 me-md-2" src="images/icons/chat.svg" alt="message" width="25"><span class="d-none d-md-inline">Сообщения</span></div>
+              <div class="nav-link link-light p-0" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false"><img class="me-7 me-md-2" src="images/icons/person.svg" alt="person" width="25"><span class="d-none d-md-inline">Профиль</span></div>
             </div>
           </nav>
           <div class="px-4 pt-5 order-1 order-md-2 tab-content" id="nav-tabContent">           
-            <section class="contacts tab-pane fade show active" id="nav-contacts" role="tabpanel" aria-labelledby="nav-contacts-tab">
+            <section class="contacts tab-pane fade show active" id="contacts" role="tabpanel" aria-labelledby="nav-contacts-tab">
               <h1 class="h2 fw-bold mb-4">Контакты</h1>
               <input class="px-4 py-3 border-0 border-bottom w-100 outline-0" type="text" placeholder="Поиск по контактам">
               <p class="text-muted text-uppercase mt-5">A</p><a class="contact mb-3" href="#">         <img class="contact-img" src="./images/avatar_3.jpg" alt="avatar">
@@ -51,7 +51,7 @@
                   <p class="contact-status">Был онлайн вчера</p>
                 </div></a>
             </section>
-            <section class="chats tab-pane fade" id="nav-chats" role="tabpanel" aria-labelledby="nav-chats-tab">
+            <section class="chats tab-pane fade" id="chats" role="tabpanel" aria-labelledby="nav-chats-tab">
               <h1 class="h2 fw-bold mb-4">Чаты</h1>
               <input class="px-4 py-3 border-0 border-bottom w-100 outline-0" type="text" placeholder="Поиск по сообщениям"><a class="chat mb-3" href="#">       <img class="chat-img" src="./images/avatar_4.jpg" alt="avatar">
                 <div class="chat-body">
@@ -69,6 +69,50 @@
                   <div class="chat-time">08:53</div>
                   <p class="chat-msg">Тесты упали &gt;_&lt;</p>
                 </div></a>
+            </section>
+            <section class="profile tab-pane fade" id="profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+              <h1 class="h2 fw-bold mb-4">Профиль</h1>
+              <input class="px-4 py-3 border-0 border-bottom w-100 outline-0" type="text" placeholder="Поиск по сообщениям">
+              <div class="card w-100 border-0 text-center py-7 px-3 mt-5 mb-5"><img class="rounded-circle align-self-center" src="./images/avatar_1.jpg" alt="avatar-profile" width="90" height="90">
+                <div class="card-body"> 
+                  <h6 class="card-title fw-bold mb-4">Кодовёнок Хекслетович</h6>
+                  <p class="card-text text-black-50">Милый и скромный помощник начинающих разработчиков. Люблю JavaScript</p>
+                </div>
+              </div>
+              <ul class="list-group border-0 px-3">
+                <li class="list-group-item border-0 border-bottom rounded-0">
+                  <div class="d-flex justify-content-between px-3">
+                    <div class="info">
+                      <p class="text-black-50 small mb-0">Страна</p>
+                      <p class="small mb-0">Москва, Россия</p>
+                    </div><img class="text-black-50" src="./images/icons/globe.svg" alt="globe-icon" width="16">
+                  </div>
+                </li>
+                <li class="list-group-item border-0 border-bottom rounded-0">
+                  <div class="d-flex justify-content-between px-3">
+                    <div class="info">
+                      <p class="text-black-50 small mb-0">Телефон</p>
+                      <p class="small mb-0">+7 (499) 123-45-67</p>
+                    </div><img class="text-black-50" src="./images/icons/phone.svg" alt="phone-icon" width="16">
+                  </div>
+                </li>
+                <li class="list-group-item border-0 border-bottom rounded-0">
+                  <div class="d-flex justify-content-between px-3">
+                    <div class="info">
+                      <p class="text-black-50 small mb-0">Email</p>
+                      <p class="small mb-0">nikita.m@hexlet.io</p>
+                    </div><img class="text-black-50" src="./images/icons/envelope.svg" alt="mail-icon" width="16">
+                  </div>
+                </li>
+                <li class="list-group-item border-0 border-bottom rounded-0">
+                  <div class="d-flex justify-content-between px-3">
+                    <div class="info">
+                      <p class="text-black-50 small mb-0">Twitter</p>
+                      <p class="small mb-0">@n_mikhaylov</p>
+                    </div><img class="text-black-50" src="./images/icons/people-1.svg" alt="twitter-icon" width="16">
+                  </div>
+                </li>
+              </ul>
             </section>
           </div>
         </div>

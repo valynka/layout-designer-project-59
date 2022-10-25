@@ -11,7 +11,7 @@ const browserSyncJob = () => {
     });
     watch('app/scss/**/*.scss', buildSass);
     watch('app/pages/**/*.pug', buildPug);
-    watch('app/images/*', destImages);
+    watch('app/images/**/*', destImages);
 };  
 
 const buildSass = () => {

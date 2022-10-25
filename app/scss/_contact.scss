@@ -1,6 +1,6 @@
 .contacts {
 	@include hide-scrollbar;
-	height: 83vh;
+	height: calc(100vh - 168px);
 }
 
 .contact {

@@ -1,0 +1,35 @@
+- header = "Профиль";
+- placeholder = "Поиск по сообщениям";
+
+section.profile.tab-pane.fade(id='profile' role='tabpanel' aria-labelledby='nav-profile-tab')
+  include leftside-top.pug
+  .card.w-100.border-0.text-center.py-7.px-3.mt-5.mb-5
+    img.rounded-circle.align-self-center(src='./images/avatar_1.jpg', alt='avatar-profile', width='90', height='90')
+    .card-body 
+      h6.card-title.fw-bold.mb-4 Кодовёнок Хекслетович
+      p.card-text.text-black-50 Милый и скромный помощник начинающих разработчиков. Люблю JavaScript
+  ul.list-group.border-0.px-3
+    li.list-group-item.border-0.border-bottom.rounded-0
+      .d-flex.justify-content-between.px-3
+        .info
+          p.text-black-50.small.mb-0 Страна
+          p.small.mb-0 Москва, Россия
+        img.text-black-50(src='./images/icons/globe.svg', alt='globe-icon', width='16')
+    li.list-group-item.border-0.border-bottom.rounded-0
+      .d-flex.justify-content-between.px-3
+        .info
+          p.text-black-50.small.mb-0 Телефон
+          p.small.mb-0 +7 (499) 123-45-67
+        img.text-black-50(src='./images/icons/phone.svg', alt='phone-icon', width='16')
+    li.list-group-item.border-0.border-bottom.rounded-0
+      .d-flex.justify-content-between.px-3
+        .info
+          p.text-black-50.small.mb-0 Email
+          p.small.mb-0 nikita.m@hexlet.io
+        img.text-black-50(src='./images/icons/envelope.svg', alt='mail-icon', width='16')
+    li.list-group-item.border-0.border-bottom.rounded-0
+      .d-flex.justify-content-between.px-3
+        .info
+          p.text-black-50.small.mb-0 Twitter
+          p.small.mb-0 @n_mikhaylov
+        img.text-black-50(src='./images/icons/people-1.svg', alt='twitter-icon', width='16')
