@@ -1,6 +1,6 @@
 .contacts {
 	@include hide-scrollbar;
-	height: calc(100vh - 168px);
+	height: calc(100vh - 168px + 48px);
 }
 
 .contact {
@@ -15,14 +15,6 @@
 
 	@include box-shadow($box-shadow-sm);
 
-	&-img {
-		width: 50px;
-		height: 50px;
-		margin-right: map.get($spacers, 4);
-
-		border-radius: 50%;
-	}
-
 	&-body {
 		.contact-name {
 			margin-bottom: map.get($spacers, 0);
@@ -32,13 +24,14 @@
 
 		.contact-status {
 			margin-top: map.get($spacers, 0);
+			margin-bottom: map.get($spacers, 0);
 
 			color: $gray-600;
 			font-size: 80%;
 		}
 	}
 
-	&:hover {
+	&:not(div):hover {
 		color: $white;
 
 		background: map.get($theme-colors, "primary");

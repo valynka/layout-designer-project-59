@@ -1,0 +1,17 @@
+.dialog {
+	@include hide-scrollbar;
+	height: calc(100vh - 292px);
+
+	@media (min-width: map.get($grid-breakpoints, "md")) {
+		height: calc(100vh - 236px);
+	}
+	padding: map.get($spacers, 5);
+
+	.msg {
+		max-width: 600px;
+	}
+
+	.time {
+		color: rgb(108 117 125 / 60%);
+	}
+}

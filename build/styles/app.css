@@ -12621,7 +12621,7 @@ textarea.form-control-lg {
   }
 }
 .contacts {
-  height: calc(100vh - 168px);
+  height: calc(100vh - 168px + 48px);
 }
 .contacts {
   overflow-x: hidden;
@@ -12640,33 +12640,27 @@ textarea.form-control-lg {
   text-decoration: none;
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
 }
-.contact-img {
-  width: 50px;
-  height: 50px;
-  margin-right: 1.5rem;
-  border-radius: 50%;
-}
 .contact-body .contact-name {
   margin-bottom: 0;
   font-weight: 700;
 }
 .contact-body .contact-status {
   margin-top: 0;
+  margin-bottom: 0;
   color: #6c757d;
   font-size: 80%;
 }
-.contact:hover {
+.contact:not(div):hover {
   color: #fff;
   background: #4545a5;
 }
-.contact:hover .contact-status {
+.contact:not(div):hover .contact-status {
   color: #fff;
 }
 
 .avatar {
-  width: 200px;
-  height: 200px;
-  margin-top: 30vh;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
 }
 
@@ -12683,7 +12677,7 @@ textarea.form-control-lg {
 }
 
 .chats {
-  height: calc(100vh - 168px);
+  height: calc(100vh - 168px + 48px);
 }
 .chats {
   overflow-x: hidden;
@@ -12704,12 +12698,6 @@ textarea.form-control-lg {
 }
 .chat:first-of-type {
   margin-top: 3rem;
-}
-.chat-img {
-  width: 50px;
-  height: 50px;
-  margin-right: 1.5rem;
-  border-radius: 50%;
 }
 .chat-body {
   display: grid;
@@ -12749,7 +12737,7 @@ textarea.form-control-lg {
 }
 
 .profile {
-  height: calc(100vh - 168px);
+  height: calc(100vh - 168px + 48px);
 }
 .profile {
   overflow-x: hidden;
@@ -12759,4 +12747,53 @@ textarea.form-control-lg {
 }
 .profile::-webkit-scrollbar {
   display: none;
+}
+
+.dialog {
+  height: calc(100vh - 292px);
+  padding: 3rem;
+}
+.dialog {
+  overflow-x: hidden;
+  overflow-y: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.dialog::-webkit-scrollbar {
+  display: none;
+}
+@media (min-width: 768px) {
+  .dialog {
+    height: calc(100vh - 236px);
+  }
+}
+.dialog .msg {
+  max-width: 600px;
+}
+.dialog .time {
+  color: rgba(108, 117, 125, 0.6);
+}
+
+.greeting-avatar {
+  width: 200px;
+  height: 200px;
+  margin-top: 30vh;
+  border-radius: 50%;
+}
+
+.msg-form {
+  position: relative;
+}
+.msg-form .msg-btn {
+  position: absolute;
+  top: 20px;
+  right: 24px;
+  width: 50px;
+  height: 50px;
+  background-color: #4545a5;
+  background-image: url("../images/icons/cursor.svg");
+  background-repeat: no-repeat;
+  background-size: 21px;
+  background-position: center;
+  color: #fff;
 }

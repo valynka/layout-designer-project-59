@@ -1,6 +1,6 @@
 .chats {
 	@include hide-scrollbar;
-	height: calc(100vh - 168px);
+	height: calc(100vh - 168px + 48px);
 }
 
 .chat {
@@ -17,14 +17,6 @@
 	text-decoration: none;
 
 	@include box-shadow($box-shadow-sm);
-
-	&-img {
-		width: 50px;
-		height: 50px;
-		margin-right: map.get($spacers, 4);
-
-		border-radius: 50%;
-	}
 
 	&-body {
 		display: grid;

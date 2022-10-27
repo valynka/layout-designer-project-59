@@ -38,13 +38,25 @@
 - let header = "Контакты";
 - let placeholder = "Поиск по контактам";
 
-section.contacts.tab-pane.fade.show.active(id='contacts' role='tabpanel' aria-labelledby='nav-contacts-tab')
-  include ../leftside-top.pug
-  each users, letter in contacts
-    p.text-muted.text-uppercase.mt-5= letter 
-    each user in users
-      a.contact.mb-3(href='#')          
-        img.contact-img(src= user.avatar alt="avatar")
-        .contact-body
-          p.contact-name= user.name
-          p.contact-status= user.status
+if page === 'chat'
+  section.contacts.tab-pane.fade(id='contacts' role='tabpanel' aria-labelledby='nav-contacts-tab')
+    include ../leftside-top.pug
+    each users, letter in contacts
+      p.text-muted.text-uppercase.mt-5= letter 
+      each user in users
+        a.contact.mb-3(href='#')          
+          img.avatar.me-4(src= user.avatar alt="avatar")
+          .contact-body
+            p.contact-name= user.name
+            p.contact-status= user.status
+else
+  section.contacts.tab-pane.fade.show.active(id='contacts' role='tabpanel' aria-labelledby='nav-contacts-tab')
+    include ../leftside-top.pug
+    each users, letter in contacts
+      p.text-muted.text-uppercase.mt-5= letter 
+      each user in users
+        a.contact.mb-3(href='#')          
+          img.avatar.me-4(src= user.avatar alt="avatar")
+          .contact-body
+            p.contact-name= user.name
+            p.contact-status= user.status
