@@ -8,5 +8,35 @@ $utilities: map-merge(
 				0: 0,
 			)
 		),
+
+		"border": map-merge(
+			map-get($utilities, "border"),
+				( responsive: true ),
+		),
+
+		"border-top": map-merge(
+			map-get($utilities, "border-top"),
+				( responsive: true ),
+		),
+
+		"border-bottom": map-merge(
+			map-get($utilities, "border-bottom"),
+				( responsive: true ),
+		),
+
+		"border-end": map-merge(
+			map-get($utilities, "border-end"),
+				( responsive: true ),
+		),
+
+		"border-start": map-merge(
+			map-get($utilities, "border-start"),
+				( responsive: true ),
+		),
+
+		"rounded": map-merge(
+			map-get($utilities, "rounded"),
+				( responsive: true ),
+		),
 	),
 );
