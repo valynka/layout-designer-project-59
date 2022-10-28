@@ -1,6 +1,6 @@
 .dialog {
 	@include hide-scrollbar;
-	height: calc(100vh - 292px);
+	height: calc(100vh - 244px);
 
 	@media (min-width: map.get($grid-breakpoints, "md")) {
 		height: calc(100vh - 236px);
