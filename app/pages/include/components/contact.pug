@@ -39,7 +39,7 @@
 - let placeholder = "Поиск по контактам";
 
 if page === 'chat'
-  section.contacts.tab-pane.fade(id='contacts' role='tabpanel' aria-labelledby='nav-contacts-tab')
+  section.px-4.contacts.tab-pane.fade(id='contacts' role='tabpanel' aria-labelledby='nav-contacts-tab')
     include ../leftside-top.pug
     each users, letter in contacts
       p.text-muted.text-uppercase.mt-5= letter 
@@ -50,7 +50,7 @@ if page === 'chat'
             p.contact-name= user.name
             p.contact-status= user.status
 else
-  section.contacts.tab-pane.fade.show.active(id='contacts' role='tabpanel' aria-labelledby='nav-contacts-tab')
+  section.px-4.contacts.tab-pane.fade.show.active(id='contacts' role='tabpanel' aria-labelledby='nav-contacts-tab')
     include ../leftside-top.pug
     each users, letter in contacts
       p.text-muted.text-uppercase.mt-5= letter 

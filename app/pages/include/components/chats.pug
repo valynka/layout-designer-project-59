@@ -23,7 +23,7 @@
 - placeholder = "Поиск по сообщениям";
 
 if page === 'chat'
-  section.chats.tab-pane.fade.show.active(id='chats' role='tabpanel' aria-labelledby='nav-chats-tab')
+  section.px-4.chats.tab-pane.fade.show.active(id='chats' role='tabpanel' aria-labelledby='nav-chats-tab')
     include ../leftside-top.pug
     each chat in chats
       a.chat.mb-3(href='#')        
@@ -33,7 +33,7 @@ if page === 'chat'
           .chat-time= chat.time
           p.chat-msg= chat.msg
 else 
-  section.chats.tab-pane.fade(id='chats' role='tabpanel' aria-labelledby='nav-chats-tab')
+  section.px-4.chats.tab-pane.fade(id='chats' role='tabpanel' aria-labelledby='nav-chats-tab')
     include ../leftside-top.pug
     each chat in chats
       a.chat.mb-3(href='#')        

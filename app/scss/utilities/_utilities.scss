@@ -8,35 +8,29 @@ $utilities: map-merge(
 				0: 0,
 			)
 		),
-
 		"border": map-merge(
 			map-get($utilities, "border"),
-				( responsive: true ),
+			( responsive: true ),
 		),
-
 		"border-top": map-merge(
 			map-get($utilities, "border-top"),
-				( responsive: true ),
+			( responsive: true ),
 		),
-
 		"border-bottom": map-merge(
 			map-get($utilities, "border-bottom"),
-				( responsive: true ),
+			( responsive: true ),
 		),
-
 		"border-end": map-merge(
 			map-get($utilities, "border-end"),
-				( responsive: true ),
+			( responsive: true ),
 		),
-
 		"border-start": map-merge(
 			map-get($utilities, "border-start"),
-				( responsive: true ),
+			( responsive: true ),
 		),
-
 		"rounded": map-merge(
 			map-get($utilities, "rounded"),
-				( responsive: true ),
+			( responsive: true ),
 		),
 	),
 );
