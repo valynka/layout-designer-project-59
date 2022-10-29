@@ -13562,8 +13562,8 @@ textarea.form-control-lg {
 }
 .msg-form .msg-btn {
   position: absolute;
-  top: 20px;
-  right: 8px;
+  top: 15px;
+  right: 16px;
   width: 42px;
   height: 42px;
   color: #fff;
@@ -13577,5 +13577,7 @@ textarea.form-control-lg {
   .msg-form .msg-btn {
     width: 50px;
     height: 50px;
+    top: 20px;
+    right: 8px;
   }
 }
