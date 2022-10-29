@@ -14,8 +14,6 @@
 
 	display: flex;
 
-	padding: map.get($spacers, 4);
-
 	color: $gray-900;
 
 	text-decoration: none;
@@ -23,9 +21,11 @@
 	@include box-shadow($box-shadow-sm);
 
 	&-body {
+
 		display: grid;
 		grid-template-rows: 2;
 		grid-template-columns: repeat(5, 1fr);
+		padding: map.get($spacers, 4);
 
 		overflow: hidden;
 

@@ -11,8 +11,6 @@
 
 	display: flex;
 
-	padding: map.get($spacers, 4);
-
 	color: $gray-900;
 
 	text-decoration: none;
@@ -20,6 +18,8 @@
 	@include box-shadow($box-shadow-sm);
 
 	&-body {
+		padding: map.get($spacers, 4);
+
 		.contact-name {
 			margin-bottom: map.get($spacers, 0);
 

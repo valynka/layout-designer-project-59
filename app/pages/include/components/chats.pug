@@ -37,7 +37,7 @@ else
     include ../leftside-top.pug
     each chat in chats
       a.chat.mb-3(href='#')        
-        img.avatar.me-4(src= chat.avatar alt="avatar")
+        img.avatar.ms-3.align-self-center(src= chat.avatar alt="avatar")
         .chat-body
           p.chat-name= chat.name
           .chat-time= chat.time

@@ -12982,10 +12982,12 @@ textarea.form-control-lg {
 
 .contact {
   display: flex;
-  padding: 1.5rem;
   color: #212529;
   text-decoration: none;
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+.contact-body {
+  padding: 1.5rem;
 }
 .contact-body .contact-name {
   margin-bottom: 0;
@@ -13043,7 +13045,6 @@ textarea.form-control-lg {
 
 .chat {
   display: flex;
-  padding: 1.5rem;
   color: #212529;
   text-decoration: none;
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
@@ -13052,6 +13053,7 @@ textarea.form-control-lg {
   margin-top: 3rem;
 }
 .chat-body {
+  padding: 1.5rem;
   display: grid;
   grid-template-rows: 2;
   grid-template-columns: repeat(5, 1fr);
