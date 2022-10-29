@@ -38,7 +38,7 @@ else
     each chat in chats
       a.chat.mb-3(href='#')        
         img.avatar.ms-3.align-self-center(src= chat.avatar alt="avatar")
-        .chat-body
+        .chat-body.flex-grow-1
           p.chat-name= chat.name
           .chat-time= chat.time
           p.chat-msg= chat.msg

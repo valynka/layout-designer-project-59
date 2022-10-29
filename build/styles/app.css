@@ -13053,10 +13053,10 @@ textarea.form-control-lg {
   margin-top: 3rem;
 }
 .chat-body {
-  padding: 1.5rem;
   display: grid;
-  grid-template-rows: 2;
+  grid-template-rows: auto auto;
   grid-template-columns: repeat(5, 1fr);
+  padding: 1.5rem;
   overflow: hidden;
 }
 .chat-body .chat-name {
