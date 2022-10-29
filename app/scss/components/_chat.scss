@@ -24,7 +24,7 @@
 
 		display: grid;
 		grid-template-rows: auto auto;
-		grid-template-columns: repeat(6, 1fr);
+		grid-template-columns: repeat(8, 1fr);
 		padding: map.get($spacers, 4);
 
 		overflow: hidden;
@@ -32,7 +32,7 @@
 		.chat-name {
 			grid-row: 1 / 2;
 
-			grid-column: 1 / 6;
+			grid-column: 1 / 8;
 			margin-bottom: map.get($spacers, 0);
 
 			font-weight: $font-weight-bold;
@@ -43,6 +43,7 @@
 
 			grid-column: 1 / -1;
 			margin-top: map.get($spacers, 0);
+			margin-bottom: map.get($spacers, 0);
 			overflow: hidden;
 
 			color: $gray-600;
@@ -54,7 +55,7 @@
 		.chat-time {
 			grid-row: 1 / 2;
 
-			grid-column: 6 / -1;
+			grid-column: 8 / -1;
 
 			color: $gray-500;
 			font-size: 80%;
