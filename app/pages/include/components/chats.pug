@@ -27,8 +27,8 @@ if page === 'chat'
     include ../leftside-top.pug
     each chat in chats
       a.chat.mb-3(href='#')        
-        img.avatar.me-4(src= chat.avatar alt="avatar")
-        .chat-body
+        img.avatar.ms-3.align-self-center(src= chat.avatar alt="avatar")
+        .chat-body.flex-grow-1.pe-7
           p.chat-name= chat.name
           .chat-time= chat.time
           p.chat-msg= chat.msg
@@ -38,7 +38,7 @@ else
     each chat in chats
       a.chat.mb-3(href='#')        
         img.avatar.ms-3.align-self-center(src= chat.avatar alt="avatar")
-        .chat-body.flex-grow-1
+        .chat-body.flex-grow-1.pe-7
           p.chat-name= chat.name
           .chat-time= chat.time
           p.chat-msg= chat.msg
