@@ -13110,7 +13110,7 @@ textarea.form-control-lg {
 }
 
 .dialog {
-  height: calc(100vh - 244px);
+  height: calc(100vh - 234px);
   padding: 3rem;
 }
 .dialog {
@@ -13124,7 +13124,7 @@ textarea.form-control-lg {
 }
 @media (min-width: 768px) {
   .dialog {
-    height: calc(100vh - 236px);
+    height: calc(100vh - 228px);
   }
 }
 .dialog .msg {
@@ -13147,13 +13147,19 @@ textarea.form-control-lg {
 .msg-form .msg-btn {
   position: absolute;
   top: 20px;
-  right: 24px;
-  width: 50px;
-  height: 50px;
+  right: 16px;
+  width: 42px;
+  height: 42px;
   color: #fff;
   background-color: #4545a5;
   background-image: url("../images/icons/cursor.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 21px;
+}
+@media (min-width: 768px) {
+  .msg-form .msg-btn {
+    width: 50px;
+    height: 50px;
+  }
 }
