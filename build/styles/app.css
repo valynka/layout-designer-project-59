@@ -13575,9 +13575,9 @@ textarea.form-control-lg {
 }
 @media (min-width: 768px) {
   .msg-form .msg-btn {
-    width: 50px;
-    height: 50px;
     top: 20px;
     right: 8px;
+    width: 50px;
+    height: 50px;
   }
 }
