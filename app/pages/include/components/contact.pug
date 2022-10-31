@@ -48,7 +48,7 @@ if page === 'chat'
           img.avatar.ms-3.align-self-center(src= user.avatar alt="avatar")
           .contact-body
             p.contact-name= user.name
-            p.contact-status= user.status
+            p.contact-status.small= user.status
 else
   section.px-4.contacts.tab-pane.fade.show.active(id='contacts' role='tabpanel' aria-labelledby='nav-contacts-tab')
     include ../leftside-top.pug
@@ -59,4 +59,4 @@ else
           img.avatar.ms-3.align-self-center(src= user.avatar alt="avatar")
           .contact-body
             p.contact-name= user.name
-            p.contact-status= user.status
+            p.contact-status.small= user.status
