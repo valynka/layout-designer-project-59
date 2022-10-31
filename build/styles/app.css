@@ -13378,24 +13378,6 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-.contacts {
-  height: calc(100vh - 72px);
-}
-.contacts {
-  overflow-x: hidden;
-  overflow-y: auto;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-.contacts::-webkit-scrollbar {
-  display: none;
-}
-@media (min-width: 768px) {
-  .contacts {
-    height: calc(100vh - 120px);
-  }
-}
-
 .contact {
   display: flex;
   color: #212529;
@@ -13439,24 +13421,6 @@ textarea.form-control-lg {
 }
 .navbar-custom img {
   filter: invert(1);
-}
-
-.chats {
-  height: calc(100vh - 72px);
-}
-.chats {
-  overflow-x: hidden;
-  overflow-y: auto;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-.chats::-webkit-scrollbar {
-  display: none;
-}
-@media (min-width: 768px) {
-  .chats {
-    height: calc(100vh - 120px);
-  }
 }
 
 .chat {
@@ -13507,41 +13471,8 @@ textarea.form-control-lg {
   color: #fff;
 }
 
-.profile {
-  height: calc(100vh - 72px);
-}
-.profile {
-  overflow-x: hidden;
-  overflow-y: auto;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-.profile::-webkit-scrollbar {
-  display: none;
-}
-@media (min-width: 768px) {
-  .profile {
-    height: calc(100vh - 120px);
-  }
-}
-
 .dialog {
-  height: calc(100vh - 237px);
   padding: 3rem;
-}
-.dialog {
-  overflow-x: hidden;
-  overflow-y: auto;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-.dialog::-webkit-scrollbar {
-  display: none;
-}
-@media (min-width: 768px) {
-  .dialog {
-    height: calc(100vh - 228px);
-  }
 }
 .dialog .msg {
   max-width: 510px;
@@ -13580,4 +13511,14 @@ textarea.form-control-lg {
     width: 50px;
     height: 50px;
   }
+}
+
+.hide-scrollbar {
+  overflow-x: hidden;
+  overflow-y: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
 }

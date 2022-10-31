@@ -1,12 +1,3 @@
-.chats {
-	@include hide-scrollbar;
-	height: calc(100vh - 72px);
-
-	@media (min-width: map.get($grid-breakpoints, "md")) {
-		height: calc(100vh - 120px);
-	}
-}
-
 .chat {
 	&:first-of-type {
 		margin-top: map.get($spacers, 5);

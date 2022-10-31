@@ -1,12 +1,3 @@
-.contacts {
-	@include hide-scrollbar;
-	height: calc(100vh - 72px);
-
-	@media (min-width: map.get($grid-breakpoints, "md")) {
-		height: calc(100vh - 120px);
-	}
-}
-
 .contact {
 
 	display: flex;

@@ -45,7 +45,7 @@ if page === 'chat'
       p.text-muted.text-uppercase.mt-5= letter 
       each user in users
         a.contact.mb-3(href='#')          
-          img.avatar.me-4(src= user.avatar alt="avatar")
+          img.avatar.ms-3.align-self-center(src= user.avatar alt="avatar")
           .contact-body
             p.contact-name= user.name
             p.contact-status= user.status
